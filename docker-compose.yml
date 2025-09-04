@@ -1,0 +1,7 @@
+services:
+  dootdice-bot:
+    build: .
+    container_name: dootdice-bot
+    env_file:
+      - .env
+    restart: unless-stopped
